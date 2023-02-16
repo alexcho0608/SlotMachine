@@ -1,0 +1,11 @@
+﻿{
+  "NumberOfSpins" : 4,
+  "NumberOfSlots" : 3,
+  "SymbolsConfig":
+  [
+	{"Symbol" : "A", "Coefficient" : 0.4, "Probability": 45},
+	{"Symbol" : "B", "Coefficient" : 0.6, "Probability": 35},
+	{"Symbol" : "P", "Coefficient" : 0.8, "Probability": 15},
+	{"Symbol" : "*", "Coefficient" : 0, "Probability": 5}
+  ]
+}
