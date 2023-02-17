@@ -1,6 +1,7 @@
 ﻿{
   "NumberOfSpins" : 4,
   "NumberOfSlots" : 3,
+  "SpecialSymbols" : ["*"],
   "SymbolsConfig":
   [
 	{"Symbol" : "A", "Coefficient" : 0.4, "Probability": 45},

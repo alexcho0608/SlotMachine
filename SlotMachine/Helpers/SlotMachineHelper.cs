@@ -44,6 +44,13 @@ namespace SlotMachineApp
             return result;
         }
 
+        public bool IsWinningCombination(string combination)
+        {
+            var distinctSymbols = combination.Distinct();
+            var bRes = distinctSymbols.Count() == 1 || (distinctSymbols.Count() == 2 && distinctSymbols.Any(e => config.SpecialSymbols.Contains(e)));
+            return bRes;
+        }
+
         private string GenerateSpinCombination()
         {
             StringBuilder result = new StringBuilder();

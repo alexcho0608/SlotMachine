@@ -10,7 +10,7 @@ namespace SlotMachineApp
     {
         public int NumberOfSpins { get; set; }
         public int NumberOfSlots { get; set; }
-
+        public List<char> SpecialSymbols { get; set; }
         public List<SymbolConfigurationModel> SymbolsConfig { get; set; }
     }
 }

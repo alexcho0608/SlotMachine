@@ -40,7 +40,7 @@ namespace SlotMachineApp
         {
             foreach(var combination in combinations)
             {
-                var bRes = IsWinningCombination(combination);
+                var bRes = this.slotMachineHelper.IsWinningCombination(combination);
                 if (bRes)
                 {
                     return true;
@@ -55,7 +55,7 @@ namespace SlotMachineApp
             decimal result = 0;
             foreach (var combination in combinations)
             {
-                if (IsWinningCombination(combination))
+                if (this.slotMachineHelper.IsWinningCombination(combination))
                 {
                     result += this.slotMachineHelper.GetCoefficient(combination);
                 }
@@ -63,12 +63,5 @@ namespace SlotMachineApp
             return result;
         }
 
-
-        private bool IsWinningCombination(string combination)
-        {
-            var distinctSymbols = combination.Distinct();
-            var bRes = distinctSymbols.Count() == 1 || (distinctSymbols.Count() == 2 && distinctSymbols.Contains('*'));
-            return bRes;
-        }
     }
 }
